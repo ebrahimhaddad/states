@@ -1,0 +1,139 @@
+<!doctype HTML>
+<body>
+    <h2>Which Corporations work in which States...</h2>
+    <table>
+        <tr>
+            <td>
+                <input type="radio" name="Firma" onclick="show('Walgreens Company')">Walgreens Company<br>
+                <input type="radio" name="Firma" onclick="show('CVS Health')">CVS Health<br>
+                <input type="radio" name="Firma" onclick="show('Walmart')">Walmart<br>
+                <input type="radio" name="Firma" onclick="show('Rite Aid Corp')">Rite Aid Corp<br>
+                <input type="radio" name="Firma" onclick="show('Kroger Company')">Kroger Company<br>
+                <input type="radio" name="Firma" onclick="show('Albertsons Inc')">Albertsons Inc<br>
+                <input type="radio" name="Firma" onclick="show('AmerisourceBergen Corporation')">AmerisourceBergen Corporation<br>
+                <input type="radio" name="Firma" onclick="show('Publix Super Markets Inc')">Publix Super Markets Inc<br>
+                <input type="radio" name="Firma" onclick="show('McKesson Corp')">McKesson Corp<br>
+                <input type="radio" name="Firma" onclick="show('Costco Wholesale Corp')">Costco Wholesale Corp<br>
+                <input type="radio" name="Firma" onclick="show('Cardinal Health Inc')">Cardinal Health Inc<br>
+                <input type="radio" name="Firma" onclick="show('H E B Grocery Company')">H E B Grocery Company<br>
+                <input type="radio" name="Firma" onclick="show('Meijer Great Lakes Limited Partnership')">Meijer Great Lakes Limited Partnership<br>
+                <input type="radio" name="Firma" onclick="show('Southeastern Grocers LLC')">Southeastern Grocers LLC<br>
+                <input type="radio" name="Firma" onclick="show('Hy Vee Inc')">Hy Vee Inc<br>
+                <input type="radio" name="Firma" onclick="show('Kaiser Permanente')">Kaiser Permanente<br>
+                <input type="radio" name="Firma" onclick="show('Pharmerica Corp')">Pharmerica Corp<br>
+                <input type="radio" name="Firma" onclick="show('Giant Eagle Inc')">Giant Eagle Inc<br>
+                <input type="radio" name="Firma" onclick="show('Ahold Delhaize America')">Ahold Delhaize America<br>
+                <input type="radio" name="Firma" onclick="show('Wegmans Food Markets Inc')">Wegmans Food Markets Inc<br>
+                <input type="radio" name="Firma" onclick="show('Kinney Drugs Inc')">Kinney Drugs Inc<br>
+            </td>
+            <td><div  style="position:relative;">
+                <img src="img/Map_of_USA.png">
+                <img style="position:absolute; left:0;" src="img/Alabama.png" id="Alabama">
+                <img style="position:absolute; left:0;" src="img/Alaska.png" id="Alaska"> 
+                <img style="position:absolute; left:0;" src="img/Arizona.png" id="Arizona">
+                <img style="position:absolute; left:0;" src="img/Arkansas.png" id="Arkansas">
+                <img style="position:absolute; left:0;" src="img/California.png" id="California">
+                <img style="position:absolute; left:0;" src="img/Colorado.png" id="Colorado">
+                <img style="position:absolute; left:0;" src="img/Connecticut.png" id="Connecticut">
+                <img style="position:absolute; left:0;" src="img/Delaware.png" id="Delaware">
+                <img style="position:absolute; left:0;" src="img/Florida.png" id="Florida">
+                <img style="position:absolute; left:0;" src="img/Georgia.png" id="Georgia">
+                <img style="position:absolute; left:0;" src="img/Hawaii.png" id="Hawaii">
+                <img style="position:absolute; left:0;" src="img/Idaho.png" id="Idaho">
+                <img style="position:absolute; left:0;" src="img/Illinois.png" id="Illinois">
+                <img style="position:absolute; left:0;" src="img/Indiana.png" id="Indiana">
+                <img style="position:absolute; left:0;" src="img/Iowa.png" id="Iowa">
+                <img style="position:absolute; left:0;" src="img/Kansas.png" id="Kansas">
+                <img style="position:absolute; left:0;" src="img/Kentucky.png" id="Kentucky">
+                <img style="position:absolute; left:0;" src="img/Louisiana.png" id="Louisiana">
+                <img style="position:absolute; left:0;" src="img/Maine.png" id="Maine">
+                <img style="position:absolute; left:0;" src="img/Maryland.png" id="Maryland">
+                <img style="position:absolute; left:0;" src="img/Massachusetts.png" id="Massachusetts">
+                <img style="position:absolute; left:0;" src="img/Michigan.png" id="Michigan">
+                <img style="position:absolute; left:0;" src="img/Minnesota.png" id="Minnesota">
+                <img style="position:absolute; left:0;" src="img/Mississippi.png" id="Mississippi">
+                <img style="position:absolute; left:0;" src="img/Missouri.png" id="Missouri">
+                <img style="position:absolute; left:0;" src="img/Montana.png" id="Montana">
+                <img style="position:absolute; left:0;" src="img/Nebraska.png" id="Nebraska">
+                <img style="position:absolute; left:0;" src="img/Nevada.png" id="Nevada">
+                <img style="position:absolute; left:0;" src="img/NewHampshire.png" id="NewHampshire">
+                <img style="position:absolute; left:0;" src="img/NewJersey.png" id="NewJersey">
+                <img style="position:absolute; left:0;" src="img/NewMexico.png" id="NewMexico">
+                <img style="position:absolute; left:0;" src="img/NewYork.png" id="NewYork">
+                <img style="position:absolute; left:0;" src="img/NorthCarolina.png" id="NorthCarolina">
+                <img style="position:absolute; left:0;" src="img/NorthDakota.png" id="NorthDakota">
+                <img style="position:absolute; left:0;" src="img/Ohio.png" id="Ohio">
+                <img style="position:absolute; left:0;" src="img/Oklahoma.png" id="Oklahoma">
+                <img style="position:absolute; left:0;" src="img/Oregon.png" id="Oregon">
+                <img style="position:absolute; left:0;" src="img/Pennsylvania.png" id="Pennsylvania">
+                <img style="position:absolute; left:0;" src="img/RhodeIsland.png" id="RhodeIsland">
+                <img style="position:absolute; left:0;" src="img/SouthCarolina.png" id="SouthCarolina">
+                <img style="position:absolute; left:0;" src="img/SouthDakota.png" id="SouthDakota">
+                <img style="position:absolute; left:0;" src="img/Tennessee.png" id="Tennessee">
+                <img style="position:absolute; left:0;" src="img/Texas.png" id="Texas">
+                <img style="position:absolute; left:0;" src="img/Utah.png" id="Utah">
+                <img style="position:absolute; left:0;" src="img/Vermont.png" id="Vermont">
+                <img style="position:absolute; left:0;" src="img/Virginia.png" id="Virginia">
+                <img style="position:absolute; left:0;" src="img/Washington.png" id="Washington">
+                <img style="position:absolute; left:0;" src="img/WestVirginia.png" id="WestVirginia">
+                <img style="position:absolute; left:0;" src="img/Wisconsin.png" id="Wisconsin">
+                <img style="position:absolute; left:0;" src="img/Wyoming.png" id="Wyoming">
+            </div></td>
+        </tr>
+    </table>
+    <footer>
+        <div>
+            <p>By: <a href="mailto:blacksmith80@gmail.com">Ebarahim Haddad</a></p>
+        </div>
+    </footer>
+<script>
+    listOfStates = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware",
+      "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland",
+      "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "NewHampshire", 
+      "NewJersey", "NewMexico", "NewYork", "NorthCarolina", "NorthDakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", 
+      "RhodeIsland", "SouthCarolina", "SouthDakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", 
+      "WestVirginia", "Wisconsin", "Wyoming"];
+    companies =['Walgreens Company', 'CVS Health', 'Walmart', 'Rite Aid Corp', 'Kroger Company', 'Albertsons Inc'
+    , 'AmerisourceBergen Corporation', 'Publix Super Markets Inc', 'McKesson Corp', 'Costco Wholesale Corp', 'Cardinal Health Inc'
+    , 'H E B Grocery Company', 'Meijer Great Lakes Limited Partnership', 'Southeastern Grocers LLC', 'Hy Vee Inc', 'Kaiser Permanente'
+    , 'Pharmerica Corp', 'Giant Eagle Inc', 'Ahold Delhaize America', 'Wegmans Food Markets Inc', 'Kinney Drugs Inc'];
+    compState =['All 50 states', 'All 50 states', 'All 50 states'
+    , 'Philadelphia, Pennsylvania, NewYork, Ohio, Michigan'
+    , 'Alaska, Arizona, Arkansas, California, Colorado, Delaware, Florida, Georgia, Idaho, Illinois, Indiana, Kansas, Kentucky, Louisiana, Maryland, Michigan, Mississippi, Missouri, Montana, Nebraska, Nevada, NewMexico, NorthCarolina, Ohio, Oregon, SouthCarolina, Tennessee, Texas, Utah, Virginia, Washington, WestVirginia, Wisconsin, Wyoming'
+    , 'California, Idaho, Montana, Nevada, NorthDakota, Oregon, Utah, Washington, Wyoming'
+    , 'All 50 states'
+    , 'Alabama, Florida, Georgia, NorthCarolina, SouthCarolina, Tennessee, Virginia, Kentucky'
+    , 'All 50 states'
+    , 'Florida, Texas, Minnesota, Arizona, California, Colorado, Georgia, Illinois, NewJersey, Nevada, Washington'
+    , 'All 50 states'
+    , 'Texas'
+    , 'Michigan, Ohio, Indiana, Illinois, Kentucky, Wisconsin'
+    , 'Alabama, Florida, Georgia, Louisiana, Mississippi'
+    , 'Iowa, Illinois, Kansas, Minnesota, Missouri, Nebraska, SouthDakota, Wisconsin'
+    , 'California, Colorado, Georgia, Hawaii, Maryland, Oregon, Virginia, Washington'
+    , 'Alabama, Arizona, Arkansas, California, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Idaho, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Maryland, Massachusetts, Michigan, Minnesota, Mississippi, Missouri, Montana, Nebraska, Nevada, NewHampshire, NewJersey, NewMexico, NewYork, NorthCarolina, Ohio, Oklahoma, Oregon, Pennsylvania, RhodeIsland, SouthCarolina, SouthDakota, Tennessee, Texas, Utah, Virginia, Washington, WestVirginia, Wisconsin'
+    , 'Pennsylvania, Ohio, WestVirginia, Indiana, Maryland'
+    , 'Alabama, Alaska, Arizona, Arkansas, California, Colorado, Connecticut, Delaware, Georgia, Idaho, Illinois, Indiana, Kansas, Kentucky, Louisiana, Maryland, Michigan, Mississippi, Missouri, Montana, Nebraska, Nevada, NewJersey, NewMexico, NorthCarolina, Ohio, Oregon, Pennsylvania, SouthCarolina, Tennessee, Texas, Utah, Virginia, Washington, WestVirginia'
+    , 'Delaware, Colorado, Massachusetts, Maryland, NewJersey, NewYork, NorthCarolina, Pennsylvania, Virginia'
+    , 'NewYork, Vermont'];
+
+      turnOff();
+      
+      function turnOff(){
+        for(i=0; i<=49; i++)
+            document.getElementById(listOfStates[i]).style.visibility = "hidden";
+      }
+      function show(inn){
+        turnOff();
+        a="";
+        for(i=0; i<=20; i++){
+            if(companies[i]==inn){
+                a = compState[i];
+            }
+        }
+        for(i=0; i<=49; i++){
+        if(a == 'All 50 states' || a.search(listOfStates[i]) > -1) document.getElementById(listOfStates[i]).style.visibility = "visible";
+        }
+      }
+</script>
+</body>
