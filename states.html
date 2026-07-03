@@ -1,90 +1,170 @@
-<!doctype HTML>
+<!doctype html>
+<head>
+  <link rel="stylesheet" href="states.css" />
+</head>
 <body>
-    <h2>Which Corporations work in which States...</h2>
-    <table>
-        <tr>
-            <td>
-                <input type="radio" name="Firma" onclick="show('Walgreens Company')">Walgreens Company<br>
-                <input type="radio" name="Firma" onclick="show('CVS Health')">CVS Health<br>
-                <input type="radio" name="Firma" onclick="show('Walmart')">Walmart<br>
-                <input type="radio" name="Firma" onclick="show('Rite Aid Corp')">Rite Aid Corp<br>
-                <input type="radio" name="Firma" onclick="show('Kroger Company')">Kroger Company<br>
-                <input type="radio" name="Firma" onclick="show('Albertsons Inc')">Albertsons Inc<br>
-                <input type="radio" name="Firma" onclick="show('AmerisourceBergen Corporation')">AmerisourceBergen Corporation<br>
-                <input type="radio" name="Firma" onclick="show('Publix Super Markets Inc')">Publix Super Markets Inc<br>
-                <input type="radio" name="Firma" onclick="show('McKesson Corp')">McKesson Corp<br>
-                <input type="radio" name="Firma" onclick="show('Costco Wholesale Corp')">Costco Wholesale Corp<br>
-                <input type="radio" name="Firma" onclick="show('Cardinal Health Inc')">Cardinal Health Inc<br>
-                <input type="radio" name="Firma" onclick="show('H E B Grocery Company')">H E B Grocery Company<br>
-                <input type="radio" name="Firma" onclick="show('Meijer Great Lakes Limited Partnership')">Meijer Great Lakes Limited Partnership<br>
-                <input type="radio" name="Firma" onclick="show('Southeastern Grocers LLC')">Southeastern Grocers LLC<br>
-                <input type="radio" name="Firma" onclick="show('Hy Vee Inc')">Hy Vee Inc<br>
-                <input type="radio" name="Firma" onclick="show('Kaiser Permanente')">Kaiser Permanente<br>
-                <input type="radio" name="Firma" onclick="show('Pharmerica Corp')">Pharmerica Corp<br>
-                <input type="radio" name="Firma" onclick="show('Giant Eagle Inc')">Giant Eagle Inc<br>
-                <input type="radio" name="Firma" onclick="show('Ahold Delhaize America')">Ahold Delhaize America<br>
-                <input type="radio" name="Firma" onclick="show('Wegmans Food Markets Inc')">Wegmans Food Markets Inc<br>
-                <input type="radio" name="Firma" onclick="show('Kinney Drugs Inc')">Kinney Drugs Inc<br>
-            </td>
-            <td><div  style="position:relative;">
-                <img src="img/Map_of_USA.png">
-                <img style="position:absolute; left:0;" src="img/Alabama.png" id="Alabama">
-                <img style="position:absolute; left:0;" src="img/Alaska.png" id="Alaska"> 
-                <img style="position:absolute; left:0;" src="img/Arizona.png" id="Arizona">
-                <img style="position:absolute; left:0;" src="img/Arkansas.png" id="Arkansas">
-                <img style="position:absolute; left:0;" src="img/California.png" id="California">
-                <img style="position:absolute; left:0;" src="img/Colorado.png" id="Colorado">
-                <img style="position:absolute; left:0;" src="img/Connecticut.png" id="Connecticut">
-                <img style="position:absolute; left:0;" src="img/Delaware.png" id="Delaware">
-                <img style="position:absolute; left:0;" src="img/Florida.png" id="Florida">
-                <img style="position:absolute; left:0;" src="img/Georgia.png" id="Georgia">
-                <img style="position:absolute; left:0;" src="img/Hawaii.png" id="Hawaii">
-                <img style="position:absolute; left:0;" src="img/Idaho.png" id="Idaho">
-                <img style="position:absolute; left:0;" src="img/Illinois.png" id="Illinois">
-                <img style="position:absolute; left:0;" src="img/Indiana.png" id="Indiana">
-                <img style="position:absolute; left:0;" src="img/Iowa.png" id="Iowa">
-                <img style="position:absolute; left:0;" src="img/Kansas.png" id="Kansas">
-                <img style="position:absolute; left:0;" src="img/Kentucky.png" id="Kentucky">
-                <img style="position:absolute; left:0;" src="img/Louisiana.png" id="Louisiana">
-                <img style="position:absolute; left:0;" src="img/Maine.png" id="Maine">
-                <img style="position:absolute; left:0;" src="img/Maryland.png" id="Maryland">
-                <img style="position:absolute; left:0;" src="img/Massachusetts.png" id="Massachusetts">
-                <img style="position:absolute; left:0;" src="img/Michigan.png" id="Michigan">
-                <img style="position:absolute; left:0;" src="img/Minnesota.png" id="Minnesota">
-                <img style="position:absolute; left:0;" src="img/Mississippi.png" id="Mississippi">
-                <img style="position:absolute; left:0;" src="img/Missouri.png" id="Missouri">
-                <img style="position:absolute; left:0;" src="img/Montana.png" id="Montana">
-                <img style="position:absolute; left:0;" src="img/Nebraska.png" id="Nebraska">
-                <img style="position:absolute; left:0;" src="img/Nevada.png" id="Nevada">
-                <img style="position:absolute; left:0;" src="img/NewHampshire.png" id="NewHampshire">
-                <img style="position:absolute; left:0;" src="img/NewJersey.png" id="NewJersey">
-                <img style="position:absolute; left:0;" src="img/NewMexico.png" id="NewMexico">
-                <img style="position:absolute; left:0;" src="img/NewYork.png" id="NewYork">
-                <img style="position:absolute; left:0;" src="img/NorthCarolina.png" id="NorthCarolina">
-                <img style="position:absolute; left:0;" src="img/NorthDakota.png" id="NorthDakota">
-                <img style="position:absolute; left:0;" src="img/Ohio.png" id="Ohio">
-                <img style="position:absolute; left:0;" src="img/Oklahoma.png" id="Oklahoma">
-                <img style="position:absolute; left:0;" src="img/Oregon.png" id="Oregon">
-                <img style="position:absolute; left:0;" src="img/Pennsylvania.png" id="Pennsylvania">
-                <img style="position:absolute; left:0;" src="img/RhodeIsland.png" id="RhodeIsland">
-                <img style="position:absolute; left:0;" src="img/SouthCarolina.png" id="SouthCarolina">
-                <img style="position:absolute; left:0;" src="img/SouthDakota.png" id="SouthDakota">
-                <img style="position:absolute; left:0;" src="img/Tennessee.png" id="Tennessee">
-                <img style="position:absolute; left:0;" src="img/Texas.png" id="Texas">
-                <img style="position:absolute; left:0;" src="img/Utah.png" id="Utah">
-                <img style="position:absolute; left:0;" src="img/Vermont.png" id="Vermont">
-                <img style="position:absolute; left:0;" src="img/Virginia.png" id="Virginia">
-                <img style="position:absolute; left:0;" src="img/Washington.png" id="Washington">
-                <img style="position:absolute; left:0;" src="img/WestVirginia.png" id="WestVirginia">
-                <img style="position:absolute; left:0;" src="img/Wisconsin.png" id="Wisconsin">
-                <img style="position:absolute; left:0;" src="img/Wyoming.png" id="Wyoming">
-            </div></td>
-        </tr>
-    </table>
-    <footer>
-        <div>
-            <p>By: <a href="mailto:blacksmith80@gmail.com">Ebarahim Haddad</a></p>
+  <h2>Which Corporations work in which States...</h2>
+  <table>
+    <tr>
+      <td>
+        <input
+          type="radio"
+          name="Firma"
+          onclick="show('Walgreens Company')"
+        />Walgreens Company<br />
+        <input type="radio" name="Firma" onclick="show('CVS Health')" />CVS
+        Health<br />
+        <input
+          type="radio"
+          name="Firma"
+          onclick="show('Walmart')"
+        />Walmart<br />
+        <input type="radio" name="Firma" onclick="show('Rite Aid Corp')" />Rite
+        Aid Corp<br />
+        <input
+          type="radio"
+          name="Firma"
+          onclick="show('Kroger Company')"
+        />Kroger Company<br />
+        <input
+          type="radio"
+          name="Firma"
+          onclick="show('Albertsons Inc')"
+        />Albertsons Inc<br />
+        <input
+          type="radio"
+          name="Firma"
+          onclick="show('AmerisourceBergen Corporation')"
+        />AmerisourceBergen Corporation<br />
+        <input
+          type="radio"
+          name="Firma"
+          onclick="show('Publix Super Markets Inc')"
+        />Publix Super Markets Inc<br />
+        <input
+          type="radio"
+          name="Firma"
+          onclick="show('McKesson Corp')"
+        />McKesson Corp<br />
+        <input
+          type="radio"
+          name="Firma"
+          onclick="show('Costco Wholesale Corp')"
+        />Costco Wholesale Corp<br />
+        <input
+          type="radio"
+          name="Firma"
+          onclick="show('Cardinal Health Inc')"
+        />Cardinal Health Inc<br />
+        <input
+          type="radio"
+          name="Firma"
+          onclick="show('H E B Grocery Company')"
+        />H E B Grocery Company<br />
+        <input
+          type="radio"
+          name="Firma"
+          onclick="show('Meijer Great Lakes Limited Partnership')"
+        />Meijer Great Lakes Limited Partnership<br />
+        <input
+          type="radio"
+          name="Firma"
+          onclick="show('Southeastern Grocers LLC')"
+        />Southeastern Grocers LLC<br />
+        <input type="radio" name="Firma" onclick="show('Hy Vee Inc')" />Hy Vee
+        Inc<br />
+        <input
+          type="radio"
+          name="Firma"
+          onclick="show('Kaiser Permanente')"
+        />Kaiser Permanente<br />
+        <input
+          type="radio"
+          name="Firma"
+          onclick="show('Pharmerica Corp')"
+        />Pharmerica Corp<br />
+        <input
+          type="radio"
+          name="Firma"
+          onclick="show('Giant Eagle Inc')"
+        />Giant Eagle Inc<br />
+        <input
+          type="radio"
+          name="Firma"
+          onclick="show('Ahold Delhaize America')"
+        />Ahold Delhaize America<br />
+        <input
+          type="radio"
+          name="Firma"
+          onclick="show('Wegmans Food Markets Inc')"
+        />Wegmans Food Markets Inc<br />
+        <input
+          type="radio"
+          name="Firma"
+          onclick="show('Kinney Drugs Inc')"
+        />Kinney Drugs Inc<br />
+      </td>
+      <td>
+        <div style="position: relative">
+          <img src="img/Map_of_USA.png" />
+          <img class="sta" src="img/Alabama.png" id="Alabama" />
+          <img class="sta" src="img/Alaska.png" id="Alaska" />
+          <img class="sta" src="img/Arizona.png" id="Arizona" />
+          <img class="sta" src="img/Arkansas.png" id="Arkansas" />
+          <img class="sta" src="img/California.png" id="California" />
+          <img class="sta" src="img/Colorado.png" id="Colorado" />
+          <img class="sta" src="img/Connecticut.png" id="Connecticut" />
+          <img class="sta" src="img/Delaware.png" id="Delaware" />
+          <img class="sta" src="img/Florida.png" id="Florida" />
+          <img class="sta" src="img/Georgia.png" id="Georgia" />
+          <img class="sta" src="img/Hawaii.png" id="Hawaii" />
+          <img class="sta" src="img/Idaho.png" id="Idaho" />
+          <img class="sta" src="img/Illinois.png" id="Illinois" />
+          <img class="sta" src="img/Indiana.png" id="Indiana" />
+          <img class="sta" src="img/Iowa.png" id="Iowa" />
+          <img class="sta" src="img/Kansas.png" id="Kansas" />
+          <img class="sta" src="img/Kentucky.png" id="Kentucky" />
+          <img class="sta" src="img/Louisiana.png" id="Louisiana" />
+          <img class="sta" src="img/Maine.png" id="Maine" />
+          <img class="sta" src="img/Maryland.png" id="Maryland" />
+          <img class="sta" src="img/Massachusetts.png" id="Massachusetts" />
+          <img class="sta" src="img/Michigan.png" id="Michigan" />
+          <img class="sta" src="img/Minnesota.png" id="Minnesota" />
+          <img class="sta" src="img/Mississippi.png" id="Mississippi" />
+          <img class="sta" src="img/Missouri.png" id="Missouri" />
+          <img class="sta" src="img/Montana.png" id="Montana" />
+          <img class="sta" src="img/Nebraska.png" id="Nebraska" />
+          <img class="sta" src="img/Nevada.png" id="Nevada" />
+          <img class="sta" src="img/NewHampshire.png" id="NewHampshire" />
+          <img class="sta" src="img/NewJersey.png" id="NewJersey" />
+          <img class="sta" src="img/NewMexico.png" id="NewMexico" />
+          <img class="sta" src="img/NewYork.png" id="NewYork" />
+          <img class="sta" src="img/NorthCarolina.png" id="NorthCarolina" />
+          <img class="sta" src="img/NorthDakota.png" id="NorthDakota" />
+          <img class="sta" src="img/Ohio.png" id="Ohio" />
+          <img class="sta" src="img/Oklahoma.png" id="Oklahoma" />
+          <img class="sta" src="img/Oregon.png" id="Oregon" />
+          <img class="sta" src="img/Pennsylvania.png" id="Pennsylvania" />
+          <img class="sta" src="img/RhodeIsland.png" id="RhodeIsland" />
+          <img class="sta" src="img/SouthCarolina.png" id="SouthCarolina" />
+          <img class="sta" src="img/SouthDakota.png" id="SouthDakota" />
+          <img class="sta" src="img/Tennessee.png" id="Tennessee" />
+          <img class="sta" src="img/Texas.png" id="Texas" />
+          <img class="sta" src="img/Utah.png" id="Utah" />
+          <img class="sta" src="img/Vermont.png" id="Vermont" />
+          <img class="sta" src="img/Virginia.png" id="Virginia" />
+          <img class="sta" src="img/Washington.png" id="Washington" />
+          <img class="sta" src="img/WestVirginia.png" id="WestVirginia" />
+          <img class="sta" src="img/Wisconsin.png" id="Wisconsin" />
+          <img class="sta" src="img/Wyoming.png" id="Wyoming" />
         </div>
-    </footer>
-<script src="states.js"></script>
+      </td>
+    </tr>
+  </table>
+  <footer>
+    <div>
+      <p>By: <a href="mailto:blacksmith80@gmail.com">Ebarahim Haddad</a></p>
+    </div>
+  </footer>
+  <script src="states.js"></script>
 </body>
